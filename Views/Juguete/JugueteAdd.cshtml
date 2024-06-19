@@ -1,0 +1,32 @@
+@model JugueteModel
+
+@{
+    ViewData["Title"] = "Alta de Juguetes";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-2">Alta de Juguete</h1>  
+</div>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form asp-controller="Juguete" asp-action="JugueteAdd">
+    <div class="mb-3">
+        <label asp-for="Codigo" class="form-label">Codigo</label>
+        <input type="text" class="form-control" asp-for="Codigo" placeholder="Escriba el Codigo Del Juguete" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" asp-for="Nombre" placeholder="Escriba Nombre Del Juguete" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Precio" class="form-label">Precio</label>
+        <input type="text" class="form-control" asp-for="Precio" placeholder="Escriba El Precio del Juguete" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-controller="Juguete" asp-action="JugueteList" class="btn btn-secundary mb-3">Regresar</a>
+</form>

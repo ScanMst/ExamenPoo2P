@@ -1,0 +1,14 @@
+@model JugueteModel
+@{
+    ViewData["Title"] = "Borrar Juguete";
+
+}
+
+<div class="mb-3">
+    ¿Estas seguro que deseas borrar El Juguete?
+</div>
+
+<form asp-controller="Juguete" asp-action="JugueteDelete">
+    <button type="summit" class="btn btn-danger" asp-action="JugueteDelete" asp-controller="Juguete">Borrar</button>
+    <a asp-controller="Juguete" asp-action="JugueteList" class="btn btn-secundary">Regresar</a>
+</form>

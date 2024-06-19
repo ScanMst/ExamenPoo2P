@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("examen2Poo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e9429b4b1083edbc85993c1cfd94ccefdafc278")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f227e62e4c3b96f5ddfdc025fecd91bb424c72e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("examen2Poo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("examen2Poo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

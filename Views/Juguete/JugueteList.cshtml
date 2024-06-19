@@ -1,0 +1,41 @@
+@model List<JugueteModel>
+@{
+    ViewData["Title"] = "Juguete";
+    int numero = 0;
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<h1>Lista de Juguetes </h1>
+<a class="btn btn-outline.primary" asp-action="JugueteAdd" asp-asp-controller="Juguete">Agregar Juguete</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            </tr>
+    </thead>
+    
+    <tbody>
+        @foreach( var Juguete in Model )
+        {
+        {
+            numero++;
+        }
+
+         <tr>
+            <th scope="row">@numero</th>
+            <td>@Juguete.Codigo</td>
+            <td>@Juguete.Nombre</td>
+            <td>@Juguete.Precio</td>
+            <td>
+                <a class="btn btn-outline-info" asp-action="JugueteEdit" asp-controller="Juguete" asp-route-id="@Juguete.Id">Editar</a>
+                <a class="btn btn-outline-danger" asp-action="JugueteDelete" asp-controller="Juguete" asp-route-id="@Juguete.Id">Borrar</a>
+            </td>
+         </tr>
+        }     
+    </tbody>
+</table>
