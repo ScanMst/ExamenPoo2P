@@ -15,5 +15,7 @@ namespace examen2Poo
         public ApplicationDbContext(DbContextOptions options) : base (options)
         {
         }
+
+         //public DbSet<nombreEntitie> Specialists { get; set; }
     }
 }
